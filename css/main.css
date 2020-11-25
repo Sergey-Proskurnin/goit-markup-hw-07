@@ -1,9 +1,9 @@
-.section-feature {
+.section-feature, .section-product {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.site-nav, .contact-list, .feature-list {
+.site-nav, .contact-list, .feature-list, .product-list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -20,7 +20,7 @@
   overflow: hidden;
 }
 
-.header-container, .section-feature div {
+.header-container, .section-feature div, .container-product {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -39,7 +39,7 @@
   border: none;
 }
 
-.feature-list {
+.feature-list, .product-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,6 +61,15 @@
 .overlay {
   text-align: center;
   background-color: #2f303a;
+}
+
+.container-product h2 {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 html {
@@ -335,5 +344,32 @@ body {
 
 .icon-astronaut::before {
   background-image: url(../images/astronaut.svg);
+}
+
+.product-item {
+  margin-left: 30px;
+  /* margin-bottom: 30px; */
+  -ms-flex-preferred-size: calc(100% / 3 - 30px);
+      flex-basis: calc(100% / 3 - 30px);
+}
+
+.thumb {
+  position: relative;
+  z-index: -1;
+}
+
+.thumb > .label-product {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  background-color: rgba(47, 48, 58, 0.8);
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-top: 27px;
+  line-height: 1.14;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
