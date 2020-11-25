@@ -4,9 +4,9 @@
   }
   .item-email {
     display: flex;
-  }
-  .item-email:not(:last-child) {
-    margin-right: 30px;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
   }
   .link-email-telephon {
     display: flex;
@@ -24,10 +24,11 @@
     letter-spacing: 0.02em;
   
     transition: 250ms $bezier-page;
-  }
-  .contact-list .link:hover,
-  .contact-list .link:focus {
+  
+     &:hover,
+     &:focus {
     color: $accent-color;
+    }
    }
    .icon-footer-header {
     fill: currentColor;

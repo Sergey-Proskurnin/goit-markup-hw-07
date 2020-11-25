@@ -21,15 +21,16 @@
     letter-spacing: 0.02em;
     /* position: relative; */
     transition: 250ms $bezier-page;
+      
+      &.current {
+        color: $accent-color;
+      }
+      &:hover,
+      &:focus {
+        color: $accent-color;
+      }
   }
-  .menu-link.current {
-    color: $accent-color;
-  }
-  .menu-link:hover,
-  .menu-link:focus {
-    color: $accent-color;
-  }
-  /* .menu-link:hover:after,
+/* .menu-link:hover:after,
   .menu-link:focus:after, */
   .current::after{
     content: "";
