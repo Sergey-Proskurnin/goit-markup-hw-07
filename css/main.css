@@ -1,9 +1,9 @@
-.section-feature, .section-product, .section-comand {
+.section-feature, .section-product, .section-comand, .section-clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.site-nav, .contact-list, .feature-list, .product-list, .comand-list, .social-list {
+.site-nav, .contact-list, .feature-list, .product-list, .comand-list, .social-list, .container-clients ul {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -20,7 +20,7 @@
   overflow: hidden;
 }
 
-.header-container, .section-feature div, .container-product, .container-comand {
+.header-container, .section-feature div, .container-product, .container-comand, .container-clients {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -39,7 +39,7 @@
   border: none;
 }
 
-.feature-list, .product-list, .comand-list {
+.feature-list, .product-list, .comand-list, .container-clients ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,7 +63,7 @@
   background-color: #2f303a;
 }
 
-.container-product h2, .container-comand h2 {
+.container-product h2, .container-comand h2, .container-clients h2 {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -491,6 +491,42 @@ body {
 }
 
 .icon {
+  fill: currentColor;
+}
+
+.clients-item {
+  margin-left: 30px;
+  -ms-flex-preferred-size: calc(100% / 6 - 30px);
+      flex-basis: calc(100% / 6 - 30px);
+  /* margin-top: 30px; */
+}
+
+.clients-item .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90px;
+  width: 170px;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-item .link:hover,
+.clients-item .link:focus {
+  border-color: #2196f3;
+  color: #2196f3;
+}
+
+.client-icon {
   fill: currentColor;
 }
 /*# sourceMappingURL=main.css.map */
