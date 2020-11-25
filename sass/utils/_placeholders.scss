@@ -1,4 +1,4 @@
-%section {
+  %section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -48,5 +48,9 @@
       line-height: 1.19;
       text-decoration: none;
     }
+  %hero {
+    text-align: center;
+    background-color: $background-hero-footer;
+  }
 
   
