@@ -1,7 +1,7 @@
 .footer-subscription {
     margin-left: 93px;
 
-    & b {
+    & .footer-title-subscription {
         @extend  %footer-title;
     }
 }

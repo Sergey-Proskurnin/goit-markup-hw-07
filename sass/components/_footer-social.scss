@@ -2,10 +2,10 @@
 
     margin-left: 70px;
     
-    & b {
+    & .footer-title-social {
         @extend %footer-title;
     }
-    & ul {
+    & .footer-social-listl {
         padding-bottom: 0px;
     }
 }

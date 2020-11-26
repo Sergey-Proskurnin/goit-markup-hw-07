@@ -5,7 +5,7 @@
 .container-comand {
       @extend %container;
       
-      & h2 {
+      & .section-title-comand {
         @extend %section-title;
       }
 }
@@ -13,13 +13,13 @@
     @extend %list;
     @extend %grid-list;
         
-    & li {
+    & .comand-item {
         background-color: $primary-white-color;
         font-size: 16px;
         line-height: 1.19;
         /* padding-bottom: 30px; */
     }
-    & .title {
+    & .title-comand-name {
         color: $title-text-color;
         font-weight: 500;
     
@@ -37,40 +37,8 @@
     /* margin-top: 30px; */
     flex-basis: calc(100% / 4 - 30px);
     
-    & p {
+    & .comand-position {
     margin-bottom: 16px;
     }
-
 }
   
-  .social-list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 206px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 30px;
-  }
-  .social-item:not(:last-child) {
-    margin-right: 10px;
-  }
-  .social-item .link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 44px;
-    width: 44px;
-  
-    color: #afb1b8;
-    border-radius: 50%;
-  
-    transition: 250ms var(--bezier-page);
-  }
-  .social-item .link:hover,
-  .social-item .link:focus {
-    background-color: var(--accent-color);
-    color: var(--primary-white-color);
-  }
-  .icon {
-    fill: currentColor;
-  }

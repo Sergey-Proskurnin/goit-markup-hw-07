@@ -3,10 +3,11 @@
 }
 .container-clients {
     @extend %container;
-    & h2 {
+    
+    & .section-title-clients {
         @extend %section-title;
     }
-    & ul {
+    & .list-clients {
         @extend %list;
         @extend %grid-list;
     }

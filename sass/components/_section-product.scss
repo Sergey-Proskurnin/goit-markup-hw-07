@@ -4,7 +4,7 @@
 .container-product { 
     @extend %container;
 
-    & h2 {
+    & .section-title-product {
         @extend %section-title;
     }
 }
@@ -16,12 +16,12 @@
     margin-left: 30px;
     /* margin-bottom: 30px; */
     flex-basis: calc(100% / 3 - 30px);
-  }
-  .thumb {
+}
+.thumb {
     position: relative;
     z-index: -1;
-  }
-  .thumb > .label-product {
+}
+.thumb > .label-product {
     position: absolute;
     bottom: 0;
      
@@ -36,5 +36,5 @@
     padding-top: 27px;
     line-height: 1.14;
     color: $primary-white-color;
-  }
+}
   
